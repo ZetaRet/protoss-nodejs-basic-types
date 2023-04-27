@@ -34,6 +34,8 @@ declare namespace zetaret.node {
 		__dataJoin?: string;
 		__dataPrefix?: string;
 		__dataSuffix?: string;
+
+		__json(data: any, code?: number): void
 	}
 	export interface RoutedResponse extends AugmentResponse {
 		__splitUrl?: RouteObject;
