@@ -76,6 +76,9 @@ declare namespace zetaret.node {
 		h2?: boolean;
 	}
 	export interface BasicServerGlobal {
+		DisableAutoStartOfProtoSSChe?: boolean;
+		EnableGlobalStatsFile?: boolean;
+		GlobalStatsFile?: any;
 		ProtoSSCheStatsFile?: string;
 		ProtoSSCheXServerPath?: string;
 		SubserverRequireModule?: string;

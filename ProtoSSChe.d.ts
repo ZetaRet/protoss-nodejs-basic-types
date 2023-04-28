@@ -38,6 +38,7 @@ declare namespace zetaret.node {
 	}
 	export interface ProtoSSCheModule {
 		serverclass: ProtoSSCheCTOR;
+		ServerEnum: { [serverid: string]: string };
 
 		loadedModule: () => ServerModule;
 		loadedModuleClass: () => ProtoSSCheCTOR;
