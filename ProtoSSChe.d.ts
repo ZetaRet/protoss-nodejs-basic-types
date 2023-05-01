@@ -49,6 +49,7 @@ declare namespace zetaret.node {
 		setEnv(envobj: ServerEnvironment): void
 		resetFSInterval(): void
 		stopFSInterval(): void
+		getNodeServer(requestListener: Function, envd?: ServerEnvironment, port?: number) : NodeServerData
 		getModuleInstance(xmodule: string): ModuleInstance
 	}
 }

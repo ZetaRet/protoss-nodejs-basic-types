@@ -102,4 +102,8 @@ declare namespace zetaret.node {
 		xprocls: ProtoSSCheCTOR;
 		xmodule: string;
 	}
+	export interface NodeServerData {
+		httpsop: object;
+		htserv: XServer;
+	}
 }
