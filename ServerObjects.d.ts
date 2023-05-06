@@ -26,7 +26,7 @@ declare namespace zetaret.node {
 	}
 	export interface AugmentResponse {
 		__splitUrl?: SplitURL;
-		__body?: string;
+		__body?: string | Buffer;
 		__encoding?: string;
 		__async?: boolean;
 		__data?: Array<any>;
@@ -53,6 +53,7 @@ declare namespace zetaret.node {
 		statsin?: ServerStats;
 		statsout?: ServerStats;
 		keepBodyBuffer?: boolean;
+		swapBodyBuffer?: boolean;
 	}
 	export interface ServerStats {
 		reqnum?: number;
@@ -78,7 +79,7 @@ declare namespace zetaret.node {
 	export interface BasicServerGlobal {
 		DisableAutoStartOfProtoSSChe?: boolean;
 		EnableGlobalStatsFile?: boolean;
-		GlobalStatsFile?: any;
+		GlobalStatsFile?: ServerStats;
 		ProtoSSCheStatsFile?: string;
 		ProtoSSCheXServerPath?: string;
 		SubserverRequireModule?: string;
