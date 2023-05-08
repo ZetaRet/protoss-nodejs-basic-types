@@ -55,15 +55,25 @@ declare namespace zetaret.node {
 		keepBodyBuffer?: boolean;
 		swapBodyBuffer?: boolean;
 	}
-	export interface ServerStats {
-		reqnum?: number;
+	export interface SingleServerStats {
 		xserver?: boolean;
 		xserverModule?: string;
-		cookieid?: string;
 		htport?: number;
 		https?: boolean;
 		httpsop?: ServerOptions;
 		h2op?: object;
+	}
+	export interface ServerStats extends SingleServerStats {
+		reqnum?: number;
+		cookieid?: string;
+	}
+	export interface ClusterStats extends ServerStats {
+		requested?: number;
+		enforceRequested?: boolean;
+		coreThreads?: number;
+		masterPort?: boolean;
+		port?: number;
+		servers?: SingleServerStats[];
 	}
 	export interface ServerOptions {
 		keyPath?: string;

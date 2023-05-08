@@ -30,6 +30,7 @@ declare namespace zetaret.node.modules {
 		routeCallback(routeData: object, body: string, request: zetaret.node.Input, response: zetaret.node.Output): void
 		initRoute(): void
 		initRouteListener(): zetaret.node.modules.Subserver
+		addRouter(router: zetaret.node.api.Router): void
 		pushProtoSSResponse(request: zetaret.node.Input, response: zetaret.node.Output): zetaret.node.modules.Subserver
 		addHeaders(request: zetaret.node.Input, response: zetaret.node.Output): object
 	}
