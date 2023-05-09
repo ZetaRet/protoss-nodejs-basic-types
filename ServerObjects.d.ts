@@ -46,7 +46,7 @@ declare namespace zetaret.node {
 	}
 	export interface XProtoResponse extends ProtoResponse {
 		__asyncEnd(code?: number): void
-		__asyncDataEnd(data: any, code: number): void
+		__asyncDataEnd(data: any, code?: number): void
 		__asyncJsonEnd(data: any, code?: number): void
 	}
 	export interface ServerEnvironment {
