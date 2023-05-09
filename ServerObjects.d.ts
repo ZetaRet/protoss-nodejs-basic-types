@@ -34,14 +34,20 @@ declare namespace zetaret.node {
 		__dataJoin?: string;
 		__dataPrefix?: string;
 		__dataSuffix?: string;
-
-		__json(data: any, code?: number): void
 	}
 	export interface RoutedResponse extends AugmentResponse {
 		__splitUrl?: RouteObject;
 		__breakRoute?: boolean;
 		__headers?: object;
 		__rawdata?: Array<object>;
+	}
+	export interface ProtoResponse extends AugmentResponse {
+		__json(data: any, code?: number): void
+	}
+	export interface XProtoResponse extends ProtoResponse {
+		__asyncEnd(code?: number): void
+		__asyncDataEnd(data: any, code: number): void
+		__asyncJsonEnd(data: any, code?: number): void
 	}
 	export interface ServerEnvironment {
 		dumpall?: boolean;
