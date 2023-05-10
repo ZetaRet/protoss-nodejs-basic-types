@@ -29,6 +29,7 @@ declare namespace zetaret.node {
 		__body?: string | Buffer;
 		__encoding?: string;
 		__async?: boolean;
+		__await?: Promise<any>;
 		__data?: Array<any>;
 		__rcode?: number;
 		__dataJoin?: string;
