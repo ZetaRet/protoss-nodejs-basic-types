@@ -8,6 +8,7 @@ declare namespace zetaret.node.modules {
 		noRouteCode: number;
 		noRouteEvent: string;
 		debugRoute: boolean;
+		debugRouteList: string[];
 		listener: zetaret.node.Emitter;
 		pathEmitter: zetaret.node.Emitter;
 		routeRegMap: object;
