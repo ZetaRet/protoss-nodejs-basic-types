@@ -35,6 +35,7 @@ declare namespace zetaret.node {
 		__dataJoin?: string;
 		__dataPrefix?: string;
 		__dataSuffix?: string;
+		__disablePipeline?: boolean;
 	}
 	export interface RoutedResponse extends AugmentResponse {
 		__splitUrl?: RouteObject;
@@ -49,6 +50,16 @@ declare namespace zetaret.node {
 		__asyncEnd(code?: number): void
 		__asyncDataEnd(data: any, code?: number): void
 		__asyncJsonEnd(data: any, code?: number): void
+	}
+	export interface RequestHeaders {
+		REQUEST_URL?: string;
+		REQUEST_DOMAIN?: string;
+		REQUEST_METHOD?: string;
+		REQUEST_PORT?: number | string;
+	}
+	export interface ResponseHeaders {
+		MAX_RESPONSE_LENGTH?: number;
+		MAX_BUFFER_LENGTH?: number;
 	}
 	export interface ServerEnvironment {
 		dumpall?: boolean;
