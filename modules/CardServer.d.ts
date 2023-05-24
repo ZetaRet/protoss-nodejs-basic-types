@@ -16,7 +16,7 @@ declare namespace zetaret.node.modules {
 		cardAppClass: CardAppCTOR;
 		sideCardAppClass: SideCardAppCTOR;
 
-		getExtends(): zetaret.node.modules.CardServerCTOR
+		getExtends(): zetaret.node.modules.LobbyServerCTOR
 		getExtendedServerProtoSS(ProtoSSChe: ProtoSSCheCTOR): zetaret.node.modules.CardServerCTOR
 	}
 }

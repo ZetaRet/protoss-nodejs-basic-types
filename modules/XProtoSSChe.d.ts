@@ -8,9 +8,9 @@ declare namespace zetaret.node.modules {
 		routeData: object;
 		autoCookie: boolean;
 		postJSON: boolean;
-		contentParsers: { [ctype: string]: Function };
+		contentParsers: { [ctype: string]: zetaret.node.utils.ContentParserFunction };
 		layerServer: boolean;
-		middleware: Array<Function>;
+		middleware: Array<zetaret.node.utils.MiddlewareFunction>;
 		emitRR: boolean;
 		asyncGrid: Function;
 		asyncBuffer: Array<object>;
@@ -35,7 +35,7 @@ declare namespace zetaret.node.modules {
 		END_RESPONSE: "endResponse";
 	}
 	export interface XProtoSSCheModule extends zetaret.node.ServerModule {
-		getExtends(): zetaret.node.modules.XProtoSSCheCTOR
+		getExtends(): zetaret.node.ProtoSSCheCTOR
 		getExtendedServerProtoSS(ProtoSSChe: ProtoSSCheCTOR): zetaret.node.modules.XProtoSSCheCTOR
 	}
 }

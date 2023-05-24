@@ -44,7 +44,7 @@ declare namespace zetaret.node.modules {
 		lobbyRoomClass: LobbyRoomCTOR;
 		lobbyAppClass: LobbyAppCTOR;
 
-		getExtends(): zetaret.node.modules.LobbyServerCTOR
+		getExtends(): zetaret.node.modules.SubserverCTOR
 		getExtendedServerProtoSS(ProtoSSChe: ProtoSSCheCTOR): zetaret.node.modules.LobbyServerCTOR
 	}
 }

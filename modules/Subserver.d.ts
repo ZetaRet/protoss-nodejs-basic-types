@@ -39,7 +39,7 @@ declare namespace zetaret.node.modules {
 		VOID: "";
 	}
 	export interface SubserverModule extends XProtoSSCheModule {
-		getExtends(): zetaret.node.modules.SubserverCTOR
+		getExtends(): zetaret.node.modules.XProtoSSCheCTOR
 		getExtendedServerProtoSS(ProtoSSChe: ProtoSSCheCTOR): zetaret.node.modules.SubserverCTOR
 	}
 }

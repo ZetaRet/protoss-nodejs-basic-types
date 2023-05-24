@@ -16,8 +16,8 @@ declare namespace zetaret.node {
 		keepBufferPerContentType: { [ctype: string]: boolean };
 		requestBodyMethods: Array<string>;
 		readRequestOnError: boolean;
-		requestMiddleware: Array<Function>;
-		responseMiddleware: Array<Function>;
+		requestMiddleware: Array<zetaret.node.utils.RequestMiddlewareFunction>;
+		responseMiddleware: Array<zetaret.node.utils.ResponseMiddlewareFunction>;
 
 		getAppRequest(request: XRequest): Input
 		onRequest(request: Input, response: Output): void
