@@ -2,6 +2,7 @@ import "./APIController";
 import "./ChatConfig";
 import "./ChatController";
 import "./ChatStream";
+import "./DataValidator";
 import "./EnvironmentTypes";
 import "./FileUpload";
 import "./Premise";
