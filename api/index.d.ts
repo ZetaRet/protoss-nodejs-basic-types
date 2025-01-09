@@ -8,5 +8,6 @@ import "./FileUpload";
 import "./Premise";
 import "./PropagationData";
 import "./Router";
+import "./Randomizer";
 import "./SocketController";
 import "./VirtualContainer";
