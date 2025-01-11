@@ -1,3 +1,4 @@
+declare module "zetaret.node.modules::LobbyServer";
 declare module "protoss-nodejs-basic/modules/LobbyServer.js";
 
 declare namespace zetaret.node.modules {

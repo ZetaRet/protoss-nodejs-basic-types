@@ -1,3 +1,5 @@
+declare module "zetaret.node.api::Router";
+
 declare namespace zetaret.node.api {
 	export interface RouterCTOR {
 		new(): Router

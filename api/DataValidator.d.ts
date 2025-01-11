@@ -1,3 +1,5 @@
+declare module "zetaret.node.api::DataValidator";
+
 declare namespace zetaret.node.api {
 	export interface DataValidator {
 		validate(data: { [key: string | number]: any }, validation: { [key: string | number]: ValidatorObject }, keychain?: string[]): boolean

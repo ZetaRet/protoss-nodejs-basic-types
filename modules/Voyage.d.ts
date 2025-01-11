@@ -1,3 +1,4 @@
+declare module "zetaret.node.modules::Voyage";
 declare module "protoss-nodejs-basic/modules/Voyage.js";
 
 declare namespace zetaret.node.modules {

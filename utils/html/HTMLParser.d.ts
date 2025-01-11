@@ -1,3 +1,5 @@
+declare module "zetaret.node.utils.html::HTMLParser";
+
 declare namespace zetaret.node.utils.html {
 	export interface HTMLParserCTOR {
 		new(): HTMLParser

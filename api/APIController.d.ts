@@ -1,3 +1,6 @@
+declare module "zetaret.node.api::APIController";
+declare module "protoss-nodejs-basic/api/APIController.js";
+
 declare namespace zetaret.node.api {
 	export interface APIControllerCTOR {
 		new(): APIController

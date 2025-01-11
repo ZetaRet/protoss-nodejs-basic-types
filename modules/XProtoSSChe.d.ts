@@ -1,3 +1,4 @@
+declare module "zetaret.node.modules::XProtoSSChe";
 declare module "protoss-nodejs-basic/modules/XProtoSSChe.js";
 
 declare namespace zetaret.node.modules {
