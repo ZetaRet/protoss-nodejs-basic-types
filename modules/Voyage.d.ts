@@ -1,3 +1,5 @@
+declare module "protoss-nodejs-basic/modules/Voyage.js";
+
 declare namespace zetaret.node.modules {
 	export interface VoyageCTOR {
 		new(): Voyage

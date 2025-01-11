@@ -1,3 +1,5 @@
+declare module "protoss-nodejs-basic/modules/XProtoSSChe.js";
+
 declare namespace zetaret.node.modules {
 	export interface XProtoSSCheCTOR {
 		new(routeCallback?: Function, routeScope?: object, routeData?: object): XProtoSSChe

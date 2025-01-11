@@ -1,3 +1,5 @@
+declare module "protoss-nodejs-basic/modules/LobbyServer.js";
+
 declare namespace zetaret.node.modules {
 	export interface LobbyServerCTOR {
 		new(): LobbyServer

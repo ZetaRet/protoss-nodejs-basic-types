@@ -1,3 +1,5 @@
+declare module "protoss-nodejs-basic/modules/Subserver.js";
+
 declare namespace zetaret.node.modules {
 	export interface SubserverCTOR {
 		new(): Subserver

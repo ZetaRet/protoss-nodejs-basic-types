@@ -110,6 +110,7 @@ declare namespace zetaret.node {
 		GlobalStatsFile?: ServerStats;
 		ProtoSSCheStatsFile?: string;
 		ProtoSSCheXServerPath?: string;
+		ProtoSSCheRequire?: Function;
 		SubserverRequireModule?: string;
 		LobbyServerRequireModule?: string;
 		CardServerRequireModule?: string;
