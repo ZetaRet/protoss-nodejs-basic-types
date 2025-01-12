@@ -1,3 +1,5 @@
+declare module "zetaret.node.utils.nano::StringLength";
+
 declare namespace zetaret.node.utils.nano {
 	export interface StringLengthCTOR {
 		new(s: string): StringLength

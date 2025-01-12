@@ -1,3 +1,5 @@
+declare module "zetaret.node.utils.nano::StringRef";
+
 declare namespace zetaret.node.utils.nano {
 	export interface StringRefCTOR {
 		new(s: string): StringRef

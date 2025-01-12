@@ -1,3 +1,5 @@
+declare module "zetaret.node.utils.web::ListDir";
+
 declare namespace zetaret.node.utils.web {
 	export interface ListDir {
 		(serverobj: zetaret.node.modules.Subserver | zetaret.node.api.Router, path: string, dir: string, config: ListDirConfig): Function

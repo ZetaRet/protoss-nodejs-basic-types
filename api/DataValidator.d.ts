@@ -1,4 +1,5 @@
 declare module "zetaret.node.api::DataValidator";
+declare module "protoss-nodejs-basic/api/DataValidator.js";
 
 declare namespace zetaret.node.api {
 	export interface DataValidator {

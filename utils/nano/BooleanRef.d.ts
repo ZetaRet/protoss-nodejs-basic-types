@@ -1,3 +1,5 @@
+declare module "zetaret.node.utils.nano::BooleanRef";
+
 declare namespace zetaret.node.utils.nano {
 	export interface BooleanRefCTOR {
 		new(b: boolean): BooleanRef

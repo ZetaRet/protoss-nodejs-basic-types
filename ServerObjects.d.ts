@@ -80,6 +80,8 @@ declare namespace zetaret.node {
 		https?: boolean;
 		httpsop?: ServerOptions;
 		h2op?: object;
+		keepAliveTimeout?: number;
+		headersTimeout?: number;
 	}
 	export interface ServerStats extends SingleServerStats {
 		reqnum?: number;

@@ -1,3 +1,5 @@
+declare module "zetaret.node.utils.web::Cookies";
+
 declare namespace zetaret.node.utils.web {
 	export interface CookiesCTOR {
 		new(): Cookies
