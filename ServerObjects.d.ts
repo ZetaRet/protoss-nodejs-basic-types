@@ -107,6 +107,7 @@ declare namespace zetaret.node {
 		h2?: boolean;
 	}
 	export interface BasicServerGlobal {
+		EnableGlobalExceptions?: boolean;
 		DisableAutoStartOfProtoSSChe?: boolean;
 		EnableGlobalStatsFile?: boolean;
 		GlobalStatsFile?: ServerStats;
