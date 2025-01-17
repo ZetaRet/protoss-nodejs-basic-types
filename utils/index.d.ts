@@ -12,4 +12,5 @@ import "./nano/StringRef";
 import "./web/Cookies";
 import "./web/CookieHelper";
 import "./web/ListDir";
+import "./web/Logging";
 import "./web/Multipart";
