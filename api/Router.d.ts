@@ -1,4 +1,5 @@
 declare module "zetaret.node.api::Router";
+declare module "protoss-nodejs-basic/api/Router.js";
 
 declare namespace zetaret.node.api {
 	export interface RouterCTOR {

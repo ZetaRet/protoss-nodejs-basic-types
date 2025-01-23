@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/utils/nano/StringLength.js";
 declare module "zetaret.node.utils.nano::StringLength";
 
 declare namespace zetaret.node.utils.nano {

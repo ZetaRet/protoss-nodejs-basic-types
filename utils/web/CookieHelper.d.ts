@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/utils/web/CookieHelper.js";
 declare module "zetaret.node.utils.web::CookieHelper";
 
 declare namespace zetaret.node.utils.web {

@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/utils/web/Logging.js";
 declare module "zetaret.node.utils.web::Logging";
 
 declare namespace zetaret.node.utils.web {

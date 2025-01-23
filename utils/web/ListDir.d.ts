@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/utils/web/ListDir.js";
 declare module "zetaret.node.utils.web::ListDir";
 
 declare namespace zetaret.node.utils.web {

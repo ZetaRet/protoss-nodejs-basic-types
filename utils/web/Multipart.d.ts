@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/utils/web/Multipart.js";
 declare module "zetaret.node.utils.web::Multipart";
 
 declare namespace zetaret.node.utils.web {

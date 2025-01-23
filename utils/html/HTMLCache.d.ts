@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/utils/html/HTMLCache.js";
 declare module "zetaret.node.utils.html::HTMLCache";
 
 declare namespace zetaret.node.utils.html {
