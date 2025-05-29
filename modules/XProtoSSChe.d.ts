@@ -1,5 +1,5 @@
 declare module "zetaret.node.modules::XProtoSSChe";
-declare module "protoss-nodejs-basic/modules/XProtoSSChe.js";
+declare module "protoss-nodejs-basic/dist/modules/XProtoSSChe.js";
 
 declare namespace zetaret.node.modules {
 	export interface XProtoSSCheCTOR {

@@ -1,4 +1,4 @@
-declare module "protoss-nodejs-basic/utils/html/HTMLParser.js";
+declare module "protoss-nodejs-basic/dist/utils/html/HTMLParser.js";
 declare module "zetaret.node.utils.html::HTMLParser";
 
 declare namespace zetaret.node.utils.html {

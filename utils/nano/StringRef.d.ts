@@ -1,4 +1,4 @@
-declare module "protoss-nodejs-basic/utils/nano/StringRef.js";
+declare module "protoss-nodejs-basic/dist/utils/nano/StringRef.js";
 declare module "zetaret.node.utils.nano::StringRef";
 
 declare namespace zetaret.node.utils.nano {

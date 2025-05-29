@@ -1,4 +1,4 @@
-declare module "protoss-nodejs-basic/utils/html/ReplaceHTMLParams.js";
+declare module "protoss-nodejs-basic/dist/utils/html/ReplaceHTMLParams.js";
 declare module "zetaret.node.utils.html::ReplaceHTMLParams";
 
 declare namespace zetaret.node.utils.html {

@@ -1,5 +1,5 @@
 declare module "zetaret.node.modules::CardServer";
-declare module "protoss-nodejs-basic/modules/CardServer.js";
+declare module "protoss-nodejs-basic/dist/modules/CardServer.js";
 
 declare namespace zetaret.node.modules {
 	export interface CardServerCTOR {

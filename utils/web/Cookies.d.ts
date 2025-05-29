@@ -22,7 +22,7 @@ declare namespace zetaret.node.utils.web {
 		writeCookie(headers: object, key: string, value: string, expires?: number, useObject?: boolean, options?: object): Cookies
 		deleteCookie(headers: object, key: string, useObject?: boolean): Cookies
 		deleteCookieObject(headers: object, key: string): Cookies
-		transformCookieObject(headers: object, remove?: boolean): Cookies
+		transformCookieObject(headers: object, remove?: boolean, response?: zetaret.node.Output): Cookies
 	}
 	export interface CookiesModule {
 		Cookies: CookiesCTOR;

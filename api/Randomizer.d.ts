@@ -1,5 +1,5 @@
 declare module "zetaret.node.api::Randomizer";
-declare module "protoss-nodejs-basic/api/Randomizer.js";
+declare module "protoss-nodejs-basic/dist/api/Randomizer.js";
 
 declare namespace zetaret.node.api {
 	export interface RandomizerCTOR {

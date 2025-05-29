@@ -1,3 +1,5 @@
+declare module "protoss-nodejs-basic/dist/utils/nano/RequireSupername.js";
+
 declare namespace zetaret.node.utils.nano {
 	export interface RequireSupernameModule {
 		maps: object;

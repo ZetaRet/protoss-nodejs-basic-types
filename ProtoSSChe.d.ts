@@ -1,7 +1,7 @@
 declare module "zetaret.node::index";
 declare module "zetaret.node::ProtoSSChe";
-declare module "protoss-nodejs-basic/index.js";
-declare module "protoss-nodejs-basic/ProtoSSChe.js";
+declare module "protoss-nodejs-basic/dist/index.js";
+declare module "protoss-nodejs-basic/dist/ProtoSSChe.js";
 
 declare namespace zetaret.node {
 	export interface ProtoSSCheCTOR {

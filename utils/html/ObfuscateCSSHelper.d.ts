@@ -1,4 +1,4 @@
-declare module "protoss-nodejs-basic/utils/html/ObfuscateCSSHelper.js";
+declare module "protoss-nodejs-basic/dist/utils/html/ObfuscateCSSHelper.js";
 declare module "zetaret.node.utils.html::ObfuscateCSSHelper";
 
 declare namespace zetaret.node.utils.html {
