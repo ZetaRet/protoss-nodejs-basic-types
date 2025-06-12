@@ -7,8 +7,8 @@ declare namespace zetaret.node.utils.web {
 	}
 	export interface ListDirConfig {
 		ext: string[];
-		files_whitelist?: string[];
-		files_blacklist?: string[];
+		whitelist?: string[];
+		blacklist?: string[];
 		filenameFilter?: Function;
 		readFile?: Function;
 		cacheControl?: { [ext: string]: number };

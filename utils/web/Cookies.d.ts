@@ -1,3 +1,4 @@
+declare module "protoss-nodejs-basic/dist/utils/web/Cookies.js";
 declare module "zetaret.node.utils.web::Cookies";
 
 declare namespace zetaret.node.utils.web {
@@ -13,7 +14,10 @@ declare namespace zetaret.node.utils.web {
 		setCookieExpires: boolean;
 		cookieExpirePeriod: number;
 		cookie: string;
-		cookieMap: object;
+		cookieMap: any;
+		reserved: string[];
+		responseHeaders: any;
+		debug: boolean;
 
 		parseCookie(cookie: string): object
 		parseCookieRequest(request: zetaret.node.Input): string
