@@ -17,18 +17,18 @@ declare namespace zetaret.node.utils.html {
 		watchMap: { [path: string]: Watcher };
 		events: zetaret.node.utils.Emitter;
 
-		setStruct(id: string, pagesOrStructIds: Array<string>): zetaret.node.utils.html.HTMLCache
+		setStruct(id: string, pagesOrStructIds: Array<string>): HTMLCache
 		getStruct(id: string): string
-		addPage(page: string, parser: zetaret.node.utils.html.HTMLParser, hfile: string, dir: string): HTMLCachePage
+		addPage(page: string, parser: HTMLParser, hfile: string, dir: string): HTMLCachePage
 		getPage(page: string): string
 		exePage(page: string, cfg?: HTMLCacheCFG): HTMLCachePage
 		renderContent(page: string): string
 		resetBinders(page: string): void
 		recache(page: string): void
-		setPages(pages: { [page: string]: HTMLCachePageEnum }, HTMLParser: zetaret.node.utils.html.HTMLParser, watchers?: object, log?: boolean): void
-		swapCSS(page: string, handler?: Function): void
-		swapJS(page: string, handler?: Function): void
-		defaultRenderTemplate(hcache: zetaret.node.utils.html.HTMLCache, page: string, pdata: HTMLCachePage, hpinst: zetaret.node.utils.html.HTMLParser, cfg: object): void
+		setPages(pages: { [page: string]: HTMLCachePageEnum }, HTMLParser: HTMLParser, watchers?: object, log?: boolean, decorateParser?: Function): void
+		swapCSS(page: string, handler?: Function, despace?: Function): void
+		swapJS(page: string, handler?: Function, despace?: Function): void
+		defaultRenderTemplate(hcache: HTMLCache, page: string, pdata: HTMLCachePage, hpinst: HTMLParser, cfg: object): void
 		watch(listener: Function, options?: object): void
 		getWatchers(listener?: Function, interval?: number, debug?: boolean, recacheOnChange?: boolean): object
 		watchFile(pr: string, page: string, type: string): void
@@ -45,23 +45,23 @@ declare namespace zetaret.node.utils.html {
 		content: string;
 	}
 	export interface HTMLCacheCFG {
-		render?: boolean;
+		render?: Function;
 		nowhite?: boolean;
 		pretty?: boolean;
 		nocontent?: boolean;
 		swapjs?: boolean;
 		jsh?: Function;
-		despacejs?: boolean;
+		despacejs?: Function;
 		swapcss?: boolean;
 		cssh?: Function;
-		despacecss?: boolean;
+		despacecss?: Function;
 	}
 	export interface HTMLCachePageEnum {
 		id?: string;
 		useAutomaton?: boolean;
 		debug?: boolean;
 		closeTags?: Array<string>;
-		cfgParser?: boolean;
+		cfgParser?: Function;
 		hfile?: string;
 		dir?: string;
 		exe?: HTMLCacheCFG;

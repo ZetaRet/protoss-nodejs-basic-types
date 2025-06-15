@@ -10,6 +10,6 @@ declare namespace zetaret.node.utils.html {
 		id: string;
 		classList: Array<string>;
 
-		convert(classes?: object, sub?: boolean, subc?: boolean): zetaret.node.utils.html.HTMLDomElement
+		convert(classes?: object, sub?: boolean, subc?: boolean): HTMLDomElement
 	}
 }
