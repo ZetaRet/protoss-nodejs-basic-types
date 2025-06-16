@@ -20,7 +20,7 @@ declare namespace zetaret.node {
 		output?: object;
 	}
 	export interface AugmentRequest {
-		__reqid?: number;
+		__reqid?: string | number;
 		__encoding?: string;
 		__bodyBuffer?: Buffer;
 	}
