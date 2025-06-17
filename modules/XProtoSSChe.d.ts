@@ -6,7 +6,6 @@ declare namespace zetaret.node.modules {
 		new(routeCallback?: Function, routeScope?: object, routeData?: object): XProtoSSChe
 	}
 	export interface XProtoSSChe extends zetaret.node.ProtoSSChe {
-		routeCallback: Function;
 		routeScope: object;
 		routeData: object;
 		autoCookie: boolean;
@@ -20,6 +19,7 @@ declare namespace zetaret.node.modules {
 		asyncInterval: number;
 		asyncId: number | object;
 
+		routeCallback(routeData: object, body: string, request: zetaret.node.Input, response: zetaret.node.Output): void
 		initRoute(): void
 		initAsyncGrid(): void
 		stopAsyncGrid(): void

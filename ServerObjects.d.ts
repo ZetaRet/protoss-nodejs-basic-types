@@ -40,7 +40,7 @@ declare namespace zetaret.node {
 	export interface RoutedResponse extends AugmentResponse {
 		__splitUrl?: RouteObject;
 		__breakRoute?: boolean;
-		__headers?: object;
+		__headers?: object | any;
 		__rawdata?: Array<object>;
 	}
 	export interface ProtoResponse extends AugmentResponse {

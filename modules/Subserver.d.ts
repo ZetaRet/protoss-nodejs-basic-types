@@ -26,23 +26,23 @@ declare namespace zetaret.node.modules {
 
 		addPathListener(path: string, callback?: Function): Function
 		removePathListener(path: string, callback: Function): zetaret.node.modules.Subserver
-		pathListener(server: zetaret.node.modules.Subserver, robj: object, routeData: object, request: zetaret.node.Input, response: zetaret.node.Output): void
+		pathListener(server: Subserver, robj: object, routeData: object, request: zetaret.node.Input, response: zetaret.node.Output): void
 		addMethodPathListener(method: string, path: string, callback: Function): Function
 		addParamsPathListener(path: string, callback: Function | Function[], method?: string, autoRoute?: boolean): Function
 		addRegPathListener(path: string, callback: Function): Function
 		setRouteRegExp(path: string): RegExp
 		routeCallback(routeData: object, body: string, request: zetaret.node.Input, response: zetaret.node.Output): void
 		initRoute(): void
-		initRouteListener(): zetaret.node.modules.Subserver
+		initRouteListener(): Subserver
 		addRouter(router: zetaret.node.api.Router): void
-		pushProtoSSResponse(request: zetaret.node.Input, response: zetaret.node.Output): zetaret.node.modules.Subserver
+		pushProtoSSResponse(request: zetaret.node.Input, response: zetaret.node.Output): Subserver
 		addHeaders(request: zetaret.node.Input, response: zetaret.node.Output): object
 	}
 	export interface SubserverEvents {
 		VOID: "";
 	}
 	export interface SubserverModule extends XProtoSSCheModule {
-		getExtends(): zetaret.node.modules.XProtoSSCheCTOR
-		getExtendedServerProtoSS(ProtoSSChe: ProtoSSCheCTOR): zetaret.node.modules.SubserverCTOR
+		getExtends(): XProtoSSCheCTOR
+		getExtendedServerProtoSS(ProtoSSChe: ProtoSSCheCTOR): SubserverCTOR
 	}
 }
