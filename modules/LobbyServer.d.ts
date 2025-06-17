@@ -20,10 +20,10 @@ declare namespace zetaret.node.modules {
 		promiseConnectTo(options: object, data?: string, secure?: boolean): Promise<object>
 		onConnectError(e: Error): void
 		onConnected(res: zetaret.node.Cross): void
-		lobby(data: object): zetaret.node.modules.LobbyServer
-		updateRemoveUser(u: LobbyUser, update?: boolean, remove?: boolean): zetaret.node.modules.LobbyServer
-		updateRemoveRoom(r: LobbyRoom, update?: boolean, remove?: boolean): zetaret.node.modules.LobbyServer
-		updateRemoveApp(a: LobbyApp, update?: boolean, remove?: boolean): zetaret.node.modules.LobbyServer
+		lobby(data: object): LobbyServer
+		updateRemoveUser(u: LobbyUser, update?: boolean, remove?: boolean): LobbyServer
+		updateRemoveRoom(r: LobbyRoom, update?: boolean, remove?: boolean): LobbyServer
+		updateRemoveApp(a: LobbyApp, update?: boolean, remove?: boolean): LobbyServer
 		user(userId: string, usercls?: LobbyUserCTOR | LobbyUser | Function): zetaret.node.modules.LobbyUser
 		room(roomId: string, roomcls?: LobbyRoomCTOR | LobbyRoom | Function): zetaret.node.modules.LobbyRoom
 		app(appId: string, appcls?: LobbyAppCTOR | LobbyApp | Function): zetaret.node.modules.LobbyApp
