@@ -18,6 +18,9 @@ declare namespace zetaret.node.modules {
 		asyncBuffer: Array<object>;
 		asyncInterval: number;
 		asyncId: number | object;
+		collectionRR: any[];
+		collectionStats: any[];
+		collectionMax: number;
 
 		routeCallback(routeData: object, body: string, request: zetaret.node.Input, response: zetaret.node.Output): void
 		initRoute(): void

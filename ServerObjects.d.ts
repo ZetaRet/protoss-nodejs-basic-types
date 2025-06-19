@@ -23,6 +23,8 @@ declare namespace zetaret.node {
 		__reqid?: string | number;
 		__encoding?: string;
 		__bodyBuffer?: Buffer;
+		__timestamp?: number;
+		__units?: number;
 	}
 	export interface AugmentResponse {
 		__splitUrl?: SplitURL;
@@ -36,6 +38,8 @@ declare namespace zetaret.node {
 		__dataPrefix?: string;
 		__dataSuffix?: string;
 		__disablePipeline?: boolean;
+		__timestamp?: number;
+		__units?: number;
 	}
 	export interface RoutedResponse extends AugmentResponse {
 		__splitUrl?: RouteObject;
