@@ -115,6 +115,7 @@ declare namespace zetaret.node {
 		onGlobalError?: Function;
 		pushGlobalError?: Function;
 		globalExceptionsAndErrors?: any;
+		globalProcessListeners?: any[];
 		DisableAutoStartOfProtoSSChe?: boolean;
 		EnableGlobalStatsFile?: boolean;
 		GlobalStatsFile?: ServerStats;
