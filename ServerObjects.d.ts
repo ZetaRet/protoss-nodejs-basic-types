@@ -119,6 +119,7 @@ declare namespace zetaret.node {
 		DisableAutoStartOfProtoSSChe?: boolean;
 		EnableGlobalStatsFile?: boolean;
 		GlobalStatsFile?: ServerStats;
+		DisableStatsFileWrite?: boolean;
 		ProtoSSCheStatsFile?: string;
 		ProtoSSCheXServerPath?: string;
 		ProtoSSCheRequire?: Function;
