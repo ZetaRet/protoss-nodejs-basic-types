@@ -18,8 +18,6 @@ declare namespace zetaret.node.modules {
 		initApps(): void
 		connectTo(options: object, data?: string, secure?: boolean): zetaret.node.XRequest
 		promiseConnectTo(options: object, data?: string, secure?: boolean): Promise<object>
-		onConnectError(e: Error): void
-		onConnected(res: zetaret.node.Cross): void
 		lobby(data: object): LobbyServer
 		updateRemoveUser(u: LobbyUser, update?: boolean, remove?: boolean): LobbyServer
 		updateRemoveRoom(r: LobbyRoom, update?: boolean, remove?: boolean): LobbyServer
