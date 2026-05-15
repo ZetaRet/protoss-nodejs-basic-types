@@ -23,6 +23,7 @@ declare namespace zetaret.node.modules {
 		noProxyCode: number;
 		noProxyEvent: string;
 		emitExacts: boolean;
+		emitStars: boolean;
 
 		addPathListener(path: string, callback?: Function): Function
 		removePathListener(path: string, callback: Function): zetaret.node.modules.Subserver
