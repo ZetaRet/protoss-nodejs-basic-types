@@ -14,6 +14,8 @@ declare namespace zetaret.node.utils.web {
 		cacheControl?: { [ext: string]: number };
 		streamExt?: { [ext: string]: boolean };
 		streamFiles?: { [filename: string]: boolean };
+		access?: Record<string, any>;
+		accessHandler?: Function;
 	}
 	export interface ListDirModule {
 		MIME_TYPES: { [ext: string]: string };

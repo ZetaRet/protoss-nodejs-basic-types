@@ -1,3 +1,6 @@
+declare module "zetaret.node.api::SocketController";
+declare module "protoss-nodejs-basic/dist/api/SocketController.js";
+
 declare namespace zetaret.node.api {
 	export interface SocketControllerCTOR {
 		new(api: APIController): SocketController
