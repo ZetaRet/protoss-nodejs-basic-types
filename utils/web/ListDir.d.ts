@@ -12,10 +12,12 @@ declare namespace zetaret.node.utils.web {
 		filenameFilter?: Function;
 		readFile?: Function;
 		cacheControl?: { [ext: string]: number };
+		nocache?: Record<string, boolean | number>;
 		streamExt?: { [ext: string]: boolean };
 		streamFiles?: { [filename: string]: boolean };
 		access?: Record<string, any>;
 		accessHandler?: Function;
+		hashMap?: Record<string, boolean | number>;
 	}
 	export interface ListDirModule {
 		MIME_TYPES: { [ext: string]: string };
