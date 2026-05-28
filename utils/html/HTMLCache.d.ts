@@ -31,7 +31,7 @@ declare namespace zetaret.node.utils.html {
 		defaultRenderTemplate(hcache: HTMLCache, page: string, pdata: HTMLCachePage, hpinst: HTMLParser, cfg: object): void
 		watch(listener: Function, options?: object): void
 		getWatchers(listener?: Function, interval?: number, debug?: boolean, recacheOnChange?: boolean): object
-		watchFile(pr: string, page: string, type: string): void
+		watchFile(pr: string, page: string, type: string): string
 		resetWatchers(): void
 		despace(v: string, type?: string): string
 	}
