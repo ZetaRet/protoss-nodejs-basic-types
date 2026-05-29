@@ -25,7 +25,7 @@ declare namespace zetaret.node.utils.html {
 		renderContent(page: string): string
 		resetBinders(page: string): void
 		recache(page: string): void
-		setPages(pages: { [page: string]: HTMLCachePageEnum }, HTMLParser: HTMLParser, watchers?: object, log?: boolean, decorateParser?: Function): void
+		setPages(pages: { [page: string]: HTMLCachePageEnum }, HTMLParser: HTMLParserCTOR, watchers?: object, log?: boolean, decorateParser?: Function): void
 		swapCSS(page: string, handler?: Function, despace?: Function): void
 		swapJS(page: string, handler?: Function, despace?: Function): void
 		defaultRenderTemplate(hcache: HTMLCache, page: string, pdata: HTMLCachePage, hpinst: HTMLParser, cfg: object): void
@@ -40,7 +40,7 @@ declare namespace zetaret.node.utils.html {
 		hfile: string;
 		dir: string;
 		hfileloc: string;
-		binders: object;
+		binders: Record<string, string>;
 		execfg: HTMLCacheCFG;
 		content: string;
 	}
@@ -65,6 +65,11 @@ declare namespace zetaret.node.utils.html {
 		hfile?: string;
 		dir?: string;
 		exe?: HTMLCacheCFG;
+	}
+	export interface WatcherObj {
+		watchers: Record<string, number>;
+		watchinterval: number;
+		watchmethod: Function;
 	}
 	export interface HTMLCacheEvents {
 		SET_STRUCT: "setStruct";

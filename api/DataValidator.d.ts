@@ -3,6 +3,7 @@ declare module "protoss-nodejs-basic/dist/api/DataValidator.js";
 
 declare namespace zetaret.node.api {
 	export interface DataValidator {
+		reset(): DataValidator
 		validate(data: { [key: string | number]: any }, validation: { [key: string | number]: ValidatorObject }, keychain?: string[]): boolean
 	}
 	export interface ValidatorObject {
@@ -38,5 +39,15 @@ declare namespace zetaret.node.api {
 	export interface KeyValidatorObject extends ValidatorObject {
 		defaults?: { [key: string]: any };
 		validation: { [key: string]: ValidatorObject };
+	}
+	export interface ErrorObj {
+		type: string;
+		key: string;
+		value: any;
+		keychain: Array<string | number>;
+	}
+	export interface ValidationError {
+		error: ErrorObj;
+		validation: ValidatorObject;
 	}
 }
