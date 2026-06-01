@@ -1,3 +1,6 @@
+declare module "zetaret.node.api::ChatController";
+declare module "protoss-nodejs-basic/dist/api/ChatController.js";
+
 declare namespace zetaret.node.api {
 	export interface ChatControllerCTOR {
 		new(): ChatController
@@ -5,7 +8,7 @@ declare namespace zetaret.node.api {
 	export interface ChatController extends APIController {
 		messages: { [mid: string]: Array<ChatMessage> };
 		autoDelete: WeakMap<object, ChatMessage>;
-		db: ChatDB | object;
+		db: ChatDB;
 		install: Function;
 		error: Function;
 		defaults: Function;

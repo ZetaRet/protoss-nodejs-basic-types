@@ -51,10 +51,10 @@ declare namespace zetaret.node.utils.html {
 		nocontent?: boolean;
 		swapjs?: boolean;
 		jsh?: Function;
-		despacejs?: Function;
+		despacejs?: boolean | Function;
 		swapcss?: boolean;
 		cssh?: Function;
-		despacecss?: Function;
+		despacecss?: boolean | Function;
 	}
 	export interface HTMLCachePageEnum {
 		id?: string;
