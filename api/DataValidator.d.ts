@@ -3,6 +3,9 @@ declare module "protoss-nodejs-basic/dist/api/DataValidator.js";
 
 declare namespace zetaret.node.api {
 	export interface DataValidator {
+		log: boolean;
+		error: ValidationError;
+
 		reset(): DataValidator
 		validate(data: { [key: string | number]: any }, validation: { [key: string | number]: ValidatorObject }, keychain?: string[]): boolean
 	}
